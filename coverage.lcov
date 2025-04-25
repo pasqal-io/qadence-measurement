@@ -1,85 +1,1604 @@
-SF:qadence_commons/__init__.py
+SF:qadence_measurement/__init__.py
+end_of_record
+SF:qadence_measurement/calibration.py
 DA:1,1
 DA:3,1
 DA:5,1
-LF:3
-LH:3
-end_of_record
-SF:qadence_commons/protocol.py
-DA:1,1
-DA:3,1
-DA:4,1
-DA:7,1
-DA:10,1
-DA:11,1
-DA:12,1
-DA:14,1
-DA:15,1
-DA:17,1
-DA:18,1
-DA:19,1
-DA:21,1
-DA:22,1
-DA:23,1
-DA:26,1
-DA:27,1
-DA:29,1
-DA:30,1
-DA:32,1
-DA:33,1
-DA:34,1
-LF:22
-LH:22
-FN:10,12,Protocol.__init__
-FNDA:1,Protocol.__init__
-FN:14,15,Protocol._to_dict
-FNDA:1,Protocol._to_dict
-FN:18,19,Protocol._from_dict
-FNDA:1,Protocol._from_dict
-FN:22,23,Protocol.list
-FNDA:1,Protocol.list
-FN:27,30,StrEnum.__str__
-FNDA:1,StrEnum.__str__
-FN:33,34,StrEnum.list
-FNDA:1,StrEnum.list
-FNF:6
-FNH:6
-end_of_record
-SF:tests/test_protocol.py
-DA:1,1
-DA:2,1
-DA:4,1
+DA:6,1
 DA:7,1
 DA:8,1
 DA:9,1
 DA:10,1
 DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:16,1
+DA:17,1
+DA:20,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:41,1
+DA:45,1
+DA:46,1
+DA:49,1
+DA:52,1
+DA:67,1
+DA:68,1
+DA:69,1
+DA:70,1
+DA:75,1
+DA:76,1
+DA:79,1
+DA:106,1
+DA:107,1
+DA:110,1
+DA:113,1
+DA:114,1
+DA:115,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:120,1
+DA:121,1
+DA:123,0
+DA:124,0
+DA:127,1
+DA:129,1
+DA:134,1
+DA:136,1
+DA:137,1
+DA:138,1
+DA:139,1
+DA:146,1
+DA:147,1
+DA:149,1
+DA:157,1
+LF:55
+LH:53
+FN:20,49,_noiseless_probabilites
+FNDA:1,_noiseless_probabilites
+FN:52,76,_samples_frequencies
+FNDA:1,_samples_frequencies
+FN:79,157,zero_state_calibration
+FNDA:1,zero_state_calibration
+FNF:3
+FNH:3
+BRDA:40,0,jump to line 41,1
+BRDA:40,0,jump to line 49,1
+BRDA:45,0,jump to line 40,1
+BRDA:45,0,jump to line 46,1
+BRDA:68,0,jump to line 69,1
+BRDA:68,0,jump to line 76,1
+BRDA:69,0,jump to line 68,1
+BRDA:69,0,jump to line 70,1
+BRDA:114,0,jump to line 115,1
+BRDA:114,0,jump to line 129,1
+BRDA:116,0,jump to line 117,1
+BRDA:116,0,jump to line 129,0
+BRDA:118,0,jump to line 119,1
+BRDA:118,0,jump to line 127,1
+BRDA:120,0,jump to line 121,1
+BRDA:120,0,jump to line 123,0
+BRDA:123,0,jump to line 118,-
+BRDA:123,0,jump to line 124,-
+BRDA:137,0,jump to line 138,1
+BRDA:137,0,jump to line 147,1
+BRF:20
+BRH:16
+end_of_record
+SF:qadence_measurement/manager.py
+DA:1,1
+DA:3,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:9,1
+DA:12,1
+DA:24,1
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:41,1
+DA:42,1
+DA:51,0
+DA:53,1
+DA:54,1
+DA:65,0
+DA:67,1
+DA:68,1
+DA:76,0
+DA:78,1
+DA:79,1
+DA:92,0
+DA:94,1
+DA:95,1
+DA:108,0
+LF:29
+LH:18
+FN:24,39,MeasurementManager.__init__
+FNDA:0,MeasurementManager.__init__
+FN:42,51,MeasurementManager.validate_data
+FNDA:0,MeasurementManager.validate_data
+FN:54,65,MeasurementManager.validate_options
+FNDA:0,MeasurementManager.validate_options
+FN:68,76,MeasurementManager.measure
+FNDA:0,MeasurementManager.measure
+FN:79,92,MeasurementManager.expectation
+FNDA:0,MeasurementManager.expectation
+FN:95,108,MeasurementManager.reconstruct_state
+FNDA:0,MeasurementManager.reconstruct_state
+FNF:6
+FNH:0
+end_of_record
+SF:qadence_measurement/protocol.py
+DA:1,1
+DA:3,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:13,1
+DA:20,1
+DA:31,1
+DA:36,1
+DA:37,1
+DA:38,1
+DA:39,0
+DA:40,0
+DA:42,1
+DA:45,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:53,1
+DA:54,1
+DA:55,1
+DA:57,1
+DA:76,1
+DA:80,1
+DA:99,1
+DA:100,1
+DA:102,1
+DA:118,1
+DA:119,0
+DA:123,1
+DA:125,1
+DA:137,0
+DA:138,0
+DA:140,1
+DA:158,1
+LF:38
+LH:33
+FN:31,47,Measurements.__init__
+FNDA:1,Measurements.__init__
+FN:50,51,Measurements.data
+FNDA:1,Measurements.data
+FN:54,55,Measurements.data
+FNDA:1,Measurements.data
+FN:57,78,Measurements._reset_manager
+FNDA:1,Measurements._reset_manager
+FN:80,100,Measurements.expectation
+FNDA:1,Measurements.expectation
+FN:102,123,Measurements.reconstruct_state
+FNDA:1,Measurements.reconstruct_state
+FN:125,138,Measurements.measure
+FNDA:0,Measurements.measure
+FN:140,158,Measurements.__call__
+FNDA:1,Measurements.__call__
+FNF:8
+FNH:7
+BRDA:118,0,jump to line 119,0
+BRDA:118,0,jump to line 123,1
+BRF:2
+BRH:1
+end_of_record
+SF:qadence_measurement/robust_shadow.py
+DA:1,1
+DA:3,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:18,1
+DA:21,1
+DA:24,1
+DA:33,1
+DA:35,1
+DA:48,1
+DA:49,1
+DA:50,0
+DA:51,1
+DA:53,1
+DA:54,1
+DA:55,0
+DA:57,1
+DA:59,1
+DA:65,1
+DA:67,1
+DA:79,0
+DA:80,0
+DA:82,0
+DA:83,0
+DA:85,0
+DA:94,0
+DA:96,1
+DA:105,1
+DA:106,0
+DA:108,1
+DA:109,1
+DA:110,1
+DA:112,1
+DA:118,1
+DA:125,1
+DA:139,1
+DA:140,0
+DA:142,1
+DA:143,1
+DA:144,1
+DA:145,1
+DA:147,1
+DA:148,0
+DA:150,1
+DA:155,1
+LF:50
+LH:39
+FN:24,33,RobustShadowManager.__init__
+FNDA:1,RobustShadowManager.__init__
+FN:35,65,RobustShadowManager.validate_options
+FNDA:1,RobustShadowManager.validate_options
+FN:67,94,RobustShadowManager.measure
+FNDA:0,RobustShadowManager.measure
+FN:96,123,RobustShadowManager.snapshots
+FNDA:1,RobustShadowManager.snapshots
+FN:125,162,RobustShadowManager.expectation
+FNDA:1,RobustShadowManager.expectation
+FNF:5
+FNH:4
+BRDA:49,0,jump to line 50,0
+BRDA:49,0,jump to line 51,1
+BRDA:54,0,jump to line 55,0
+BRDA:54,0,jump to line 57,1
+BRDA:79,0,jump to line 80,-
+BRDA:79,0,jump to line 82,-
+BRDA:105,0,jump to line 106,0
+BRDA:105,0,jump to line 108,1
+BRDA:109,0,jump to line 110,1
+BRDA:109,0,jump to line 112,0
+BRDA:139,0,jump to line 140,0
+BRDA:139,0,jump to line 142,1
+BRDA:144,0,jump to line 145,1
+BRDA:144,0,jump to line 147,0
+BRDA:147,0,jump to line 148,0
+BRDA:147,0,jump to line 150,1
+BRF:16
+BRH:7
+end_of_record
+SF:qadence_measurement/shadow.py
+DA:1,1
+DA:3,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:10,1
+DA:11,1
+DA:15,1
+DA:21,1
+DA:24,1
+DA:27,1
+DA:36,1
+DA:37,1
+DA:39,1
+DA:40,1
+DA:42,1
+DA:43,1
+DA:46,1
+DA:47,1
+DA:48,1
+DA:50,1
+DA:63,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:70,1
+DA:71,1
+DA:72,1
+DA:73,1
+DA:78,1
+DA:79,1
+DA:87,1
+DA:89,1
+DA:95,1
+DA:97,1
+DA:98,1
+DA:100,1
+DA:101,0
+DA:103,1
+DA:104,0
+DA:106,1
+DA:107,0
+DA:109,1
+DA:110,0
+DA:112,1
+DA:113,1
+DA:114,0
+DA:118,1
+DA:119,1
+DA:120,1
+DA:125,1
+DA:126,0
+DA:131,1
+DA:133,1
+DA:141,1
+DA:143,1
+DA:144,1
+DA:146,1
+DA:160,1
+DA:161,0
+DA:163,1
+DA:167,1
+DA:174,1
+DA:186,1
+DA:187,0
+DA:188,1
+DA:189,1
+DA:190,1
+DA:192,1
+DA:193,1
+DA:199,1
+DA:208,1
+DA:210,1
+DA:225,1
+DA:226,0
+DA:227,1
+DA:232,1
+DA:233,1
+DA:239,1
+DA:240,1
+DA:242,1
+LF:82
+LH:73
+FN:27,48,ShadowManager.__init__
+FNDA:1,ShadowManager.__init__
+FN:50,87,ShadowManager.validate_options
+FNDA:1,ShadowManager.validate_options
+FN:89,131,ShadowManager.validate_data
+FNDA:1,ShadowManager.validate_data
+FN:133,144,ShadowManager.reconstruct_state
+FNDA:1,ShadowManager.reconstruct_state
+FN:146,172,ShadowManager.snapshots
+FNDA:1,ShadowManager.snapshots
+FN:174,208,ShadowManager.measure
+FNDA:1,ShadowManager.measure
+FN:210,244,ShadowManager.expectation
+FNDA:1,ShadowManager.expectation
+FNF:7
+FNH:7
+BRDA:39,0,jump to line 40,1
+BRDA:39,0,jump to line 42,1
+BRDA:65,0,jump to line 66,1
+BRDA:65,0,jump to line 70,1
+BRDA:72,0,jump to line 73,1
+BRDA:72,0,jump to line 78,1
+BRDA:95,0,jump to line 97,1
+BRDA:95,0,jump to line 100,1
+BRDA:100,0,jump to line 101,0
+BRDA:100,0,jump to line 103,1
+BRDA:103,0,jump to line 104,0
+BRDA:103,0,jump to line 106,1
+BRDA:106,0,jump to line 107,0
+BRDA:106,0,jump to line 109,1
+BRDA:109,0,jump to line 110,0
+BRDA:109,0,jump to line 112,1
+BRDA:113,0,jump to line 114,0
+BRDA:113,0,jump to line 118,1
+BRDA:118,0,jump to line 119,1
+BRDA:118,0,jump to line 131,1
+BRDA:125,0,jump to line 126,0
+BRDA:125,0,jump to line 131,1
+BRDA:160,0,jump to line 161,0
+BRDA:160,0,jump to line 163,1
+BRDA:186,0,jump to line 187,0
+BRDA:186,0,jump to line 188,1
+BRDA:192,0,jump to line 193,1
+BRDA:192,0,jump to line 199,1
+BRDA:225,0,jump to line 226,0
+BRDA:225,0,jump to line 227,1
+BRDA:239,0,jump to line 240,1
+BRDA:239,0,jump to line 242,0
+BRF:32
+BRH:22
+end_of_record
+SF:qadence_measurement/tomography.py
+DA:1,1
+DA:3,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:19,1
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:28,1
+DA:31,1
+DA:40,1
+DA:41,1
+DA:42,1
+DA:43,1
+DA:45,1
+DA:46,1
+DA:48,1
+DA:49,1
+DA:52,1
+DA:54,1
+DA:66,1
+DA:67,1
+DA:68,1
+DA:69,1
+DA:71,1
+DA:77,1
+DA:78,0
+DA:80,1
+DA:81,0
+DA:82,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:93,1
+DA:95,1
+DA:97,0
+DA:99,1
+DA:110,1
+DA:111,0
+DA:113,1
+DA:114,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:130,1
+DA:131,1
+DA:133,1
+DA:144,1
+DA:145,1
+DA:146,1
+DA:147,1
+DA:149,1
+DA:150,1
+DA:151,1
+DA:154,1
+LF:66
+LH:51
+FN:19,25,flatten_recursive
+FNDA:0,flatten_recursive
+FN:31,52,Tomography.__init__
+FNDA:1,Tomography.__init__
+FN:54,69,Tomography.validate_options
+FNDA:1,Tomography.validate_options
+FN:71,93,Tomography.validate_data
+FNDA:1,Tomography.validate_data
+FN:95,97,Tomography.reconstruct_state
+FNDA:0,Tomography.reconstruct_state
+FN:99,131,Tomography.measure
+FNDA:1,Tomography.measure
+FN:133,154,Tomography.expectation
+FNDA:1,Tomography.expectation
+FNF:7
+FNH:5
+BRDA:21,0,jump to line 22,-
+BRDA:21,0,return from function 'flatten_recursive',-
+BRDA:22,0,jump to line 23,-
+BRDA:22,0,jump to line 25,-
+BRDA:45,0,jump to line 46,1
+BRDA:45,0,jump to line 48,1
+BRDA:67,0,jump to line 68,1
+BRDA:67,0,jump to line 69,1
+BRDA:77,0,jump to line 78,0
+BRDA:77,0,jump to line 80,1
+BRDA:80,0,jump to line 81,0
+BRDA:80,0,jump to line 93,1
+BRDA:81,0,jump to line 82,-
+BRDA:81,0,jump to line 85,-
+BRDA:86,0,jump to line 87,-
+BRDA:86,0,jump to line 93,-
+BRDA:87,0,jump to line 86,-
+BRDA:87,0,jump to line 88,-
+BRDA:88,0,jump to line 87,-
+BRDA:88,0,jump to line 89,-
+BRDA:89,0,jump to line 88,-
+BRDA:89,0,jump to line 90,-
+BRDA:110,0,jump to line 111,0
+BRDA:110,0,jump to line 113,1
+BRDA:117,0,jump to line 118,1
+BRDA:117,0,jump to line 130,1
+BRDA:145,0,jump to line 146,1
+BRDA:145,0,jump to line 149,0
+BRDA:150,0,jump to line 151,1
+BRDA:150,0,jump to line 154,1
+BRF:30
+BRH:12
+end_of_record
+SF:qadence_measurement/utils/__init__.py
+end_of_record
+SF:qadence_measurement/utils/data_acquisition.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
 DA:14,1
 DA:15,1
+DA:16,1
 DA:17,1
 DA:18,1
 DA:19,1
+DA:21,1
+DA:22,1
+DA:25,1
+DA:28,1
+DA:39,1
+DA:40,1
+DA:41,1
+DA:42,1
+DA:43,1
+DA:44,1
+DA:45,1
+DA:46,1
+DA:47,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+DA:53,1
+DA:54,1
+DA:55,1
+DA:58,1
+DA:60,1
+DA:63,1
+DA:78,1
+DA:79,1
+DA:80,1
+DA:81,1
+DA:82,1
+DA:83,1
+DA:84,1
+DA:85,1
+DA:88,1
+DA:99,1
+DA:100,1
+DA:101,1
+DA:104,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:120,1
+DA:123,1
+DA:125,1
+DA:126,1
+DA:129,1
+DA:138,1
+DA:139,1
+DA:140,1
+DA:142,1
+DA:143,1
+DA:146,1
+DA:150,1
+DA:151,1
+DA:153,1
+DA:154,1
+DA:155,1
+DA:157,0
+DA:158,0
+DA:159,1
+DA:162,1
+DA:192,1
+DA:193,1
+DA:194,1
+DA:196,1
+DA:197,1
+DA:200,1
+DA:201,1
+DA:207,1
+DA:212,0
+DA:221,1
+DA:222,0
+DA:223,0
+DA:224,0
+DA:226,1
+DA:228,1
+DA:229,1
+DA:237,1
+DA:239,1
+DA:240,1
+DA:242,1
+DA:243,1
+DA:244,1
+DA:245,1
+DA:253,1
+DA:254,1
+DA:255,1
+DA:256,1
+LF:104
+LH:98
+FN:28,55,_max_observable_weight
+FNDA:1,_max_observable_weight
+FN:58,60,maximal_weight
+FNDA:1,maximal_weight
+FN:63,85,number_of_samples
+FNDA:1,number_of_samples
+FN:88,101,nested_operator_indexing
+FNDA:1,nested_operator_indexing
+FN:104,120,rotations_unitary_map
+FNDA:1,rotations_unitary_map
+FN:123,126,kron_if_non_empty
+FNDA:1,kron_if_non_empty
+FN:129,143,extract_operators
+FNDA:1,extract_operators
+FN:146,159,counter_to_freq_vector
+FNDA:1,counter_to_freq_vector
+FN:162,256,shadow_samples
+FNDA:1,shadow_samples
+FNF:9
+FNH:9
+BRDA:41,0,jump to line 42,1
+BRDA:41,0,jump to line 55,1
+BRDA:44,0,jump to line 45,1
+BRDA:44,0,jump to line 49,1
+BRDA:45,0,jump to line 46,1
+BRDA:45,0,jump to line 47,0
+BRDA:51,0,jump to line 52,1
+BRDA:51,0,jump to line 54,1
+BRDA:52,0,jump to line 51,1
+BRDA:52,0,jump to line 53,1
+BRDA:81,0,jump to line 82,1
+BRDA:81,0,jump to line 83,1
+BRDA:83,0,jump to line 84,1
+BRDA:83,0,jump to line 85,0
+BRDA:99,0,jump to line 100,1
+BRDA:99,0,jump to line 101,1
+BRDA:117,0,jump to line 118,1
+BRDA:117,0,jump to line 120,1
+BRDA:139,0,jump to line 140,1
+BRDA:139,0,jump to line 142,1
+BRDA:153,0,jump to line 154,1
+BRDA:153,0,jump to line 157,0
+BRDA:154,0,jump to line 155,1
+BRDA:154,0,jump to line 159,1
+BRDA:157,0,jump to line 158,-
+BRDA:157,0,jump to line 159,-
+BRDA:197,0,jump to line 200,1
+BRDA:197,0,jump to line 212,0
+BRDA:221,0,jump to line 222,0
+BRDA:221,0,jump to line 226,1
+BRDA:223,0,jump to line 224,-
+BRDA:223,0,jump to line 226,-
+BRDA:226,0,jump to line 228,1
+BRDA:226,0,jump to line 239,1
+BRDA:242,0,jump to line 243,1
+BRDA:242,0,jump to line 253,1
+BRDA:243,0,jump to line 244,1
+BRDA:243,0,jump to line 245,1
+BRDA:253,0,jump to line 254,1
+BRDA:253,0,jump to line 255,1
+BRF:40
+BRH:31
+end_of_record
+SF:qadence_measurement/utils/post_processing.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:15,1
+DA:19,1
+DA:25,1
+DA:26,1
+DA:28,1
+DA:30,1
+DA:31,1
+DA:34,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:41,1
+DA:44,1
+DA:47,1
+DA:57,1
+DA:60,1
+DA:61,1
+DA:64,1
+DA:66,1
+DA:69,1
+DA:70,1
+DA:73,1
+DA:76,1
+DA:77,1
+DA:78,1
+DA:80,1
+DA:81,1
+DA:82,1
+DA:83,1
+DA:86,1
+DA:87,1
+DA:88,1
+DA:89,1
+DA:90,1
+DA:91,1
+DA:94,1
+DA:105,1
+DA:106,1
+DA:107,1
+DA:108,1
+DA:109,1
+DA:110,1
+DA:113,1
+DA:114,1
+DA:115,1
+DA:118,1
+DA:121,1
+DA:122,1
+DA:123,1
+DA:126,1
+DA:131,1
+DA:132,1
+DA:133,1
+DA:134,1
+DA:137,1
+DA:138,1
+DA:143,1
+DA:144,1
+DA:147,1
+DA:150,1
+DA:152,1
+DA:154,1
+DA:155,1
+DA:159,1
+DA:160,1
+DA:162,1
+DA:163,1
+DA:164,1
+DA:167,1
+DA:169,0
+DA:172,1
+DA:189,1
+DA:190,1
+DA:191,1
+DA:192,0
+DA:193,1
+DA:195,1
+DA:196,1
+DA:199,1
+DA:200,1
+DA:202,1
+DA:203,1
+DA:205,1
+DA:206,1
+DA:208,1
+DA:209,1
+DA:210,1
+DA:215,1
+DA:216,1
+DA:219,1
+DA:222,1
+DA:223,1
+DA:225,1
+DA:229,1
+DA:230,1
+DA:232,0
+DA:233,1
+DA:236,1
+DA:253,1
+DA:254,1
+DA:256,1
+DA:257,1
+DA:258,1
+DA:260,1
+DA:261,1
+DA:265,1
+DA:267,1
+DA:268,1
+DA:269,1
+DA:272,1
+DA:280,1
+DA:281,1
+DA:283,1
+DA:285,1
+DA:286,1
+DA:287,1
+DA:288,1
+DA:289,1
+DA:290,1
+DA:293,1
+DA:303,1
+DA:306,1
+DA:307,1
+DA:308,1
+LF:135
+LH:132
+FN:34,44,get_local_shadow_components
+FNDA:1,get_local_shadow_components
+FN:47,61,local_shadow
+FNDA:1,local_shadow
+FN:64,73,robust_local_shadow
+FNDA:1,robust_local_shadow
+FN:76,83,get_global_unitaries
+FNDA:1,get_global_unitaries
+FN:86,91,get_ein_command_shadows
+FNDA:1,get_ein_command_shadows
+FN:94,115,hamming_to_shadows
+FNDA:1,hamming_to_shadows
+FN:118,123,global_shadow_hamming
+FNDA:1,global_shadow_hamming
+FN:126,144,global_robust_shadow_hamming
+FNDA:1,global_robust_shadow_hamming
+FN:147,164,compute_snapshots
+FNDA:1,compute_snapshots
+FN:154,155,compute_snapshots.obtain_global_shadow
+FNDA:1,compute_snapshots.obtain_global_shadow
+FN:167,169,reconstruct_state
+FNDA:0,reconstruct_state
+FN:172,233,estimators_from_bitstrings
+FNDA:1,estimators_from_bitstrings
+FN:236,269,estimators_from_probas
+FNDA:1,estimators_from_probas
+FN:272,308,expectation_estimations
+FNDA:1,expectation_estimations
+FNF:14
+FNH:13
+BRDA:80,0,jump to line 81,1
+BRDA:80,0,jump to line 83,0
+BRDA:88,0,jump to line 89,1
+BRDA:88,0,jump to line 90,1
+BRDA:152,0,jump to line 154,1
+BRDA:152,0,jump to line 159,1
+BRDA:162,0,jump to line 163,1
+BRDA:162,0,jump to line 164,1
+BRDA:190,0,jump to line 191,1
+BRDA:190,0,jump to line 195,1
+BRDA:191,0,jump to line 192,0
+BRDA:191,0,jump to line 193,1
+BRDA:195,0,jump to line 196,1
+BRDA:195,0,jump to line 202,0
+BRDA:205,0,jump to line 206,1
+BRDA:205,0,jump to line 208,1
+BRDA:209,0,jump to line 210,1
+BRDA:209,0,jump to line 233,1
+BRDA:215,0,jump to line 216,1
+BRDA:215,0,jump to line 232,0
+BRDA:222,0,jump to line 223,1
+BRDA:222,0,jump to line 225,1
+BRDA:257,0,jump to line 258,1
+BRDA:257,0,jump to line 260,1
+BRDA:260,0,jump to line 261,1
+BRDA:260,0,jump to line 269,1
+BRDA:285,0,jump to line 286,1
+BRDA:285,0,jump to line 308,1
+BRDA:288,0,jump to line 289,1
+BRDA:288,0,jump to line 307,1
+BRDA:290,0,jump to line 293,1
+BRDA:290,0,jump to line 306,1
+BRF:32
+BRH:28
+end_of_record
+SF:qadence_measurement/utils/types.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:5,1
+DA:6,1
+DA:8,1
+DA:9,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:20,1
+DA:21,1
 DA:22,1
 DA:23,1
 DA:24,1
 DA:25,1
+DA:26,1
+LF:20
+LH:20
+end_of_record
+SF:qadence_measurement/utils/unitaries.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:5,1
+DA:6,1
+DA:8,1
+DA:9,1
+DA:15,1
+DA:20,1
+DA:22,1
+DA:24,1
+DA:27,1
+DA:28,1
+LF:13
+LH:13
+end_of_record
+SF:qadence_measurement/utils/utils_tomography.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:18,1
+DA:21,1
+DA:32,1
+DA:33,1
+DA:34,1
+DA:37,1
+DA:46,1
+DA:55,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:67,1
+DA:68,1
+DA:69,1
+DA:70,1
+DA:71,1
+DA:72,1
+DA:73,1
+DA:76,1
+DA:86,1
+DA:88,1
+DA:89,1
+DA:90,1
+DA:91,1
+DA:92,1
+DA:93,1
+DA:96,1
+DA:121,1
+DA:123,1
+DA:124,1
+DA:125,0
+DA:128,1
+DA:132,1
+DA:133,1
+DA:143,1
+DA:146,1
+DA:165,1
+DA:167,1
+DA:168,1
+DA:169,0
+DA:175,1
+DA:176,1
+DA:178,1
+DA:179,1
+DA:181,1
+DA:182,1
+LF:61
+LH:59
+FN:21,34,get_qubit_indices_for_op
+FNDA:1,get_qubit_indices_for_op
+FN:37,52,get_counts
+FNDA:1,get_counts
+FN:55,73,empirical_average
+FNDA:1,empirical_average
+FN:76,93,rotate
+FNDA:1,rotate
+FN:96,143,iterate_pauli_decomposition
+FNDA:1,iterate_pauli_decomposition
+FN:146,182,convert_samples_to_pauli_expectation
+FNDA:1,convert_samples_to_pauli_expectation
+FNF:6
+FNH:6
+BRDA:68,0,jump to line 69,1
+BRDA:68,0,jump to line 73,1
+BRDA:70,0,jump to line 71,1
+BRDA:70,0,jump to line 72,1
+BRDA:88,0,jump to line 89,1
+BRDA:88,0,jump to line 92,1
+BRDA:90,0,jump to line 88,1
+BRDA:90,0,jump to line 91,1
+BRDA:123,0,jump to line 124,1
+BRDA:123,0,jump to line 143,1
+BRDA:124,0,jump to line 125,0
+BRDA:124,0,jump to line 128,1
+BRDA:167,0,jump to line 168,1
+BRDA:167,0,jump to line 179,1
+BRDA:168,0,jump to line 169,0
+BRDA:168,0,jump to line 175,1
+BRF:16
+BRH:14
+end_of_record
+SF:qadence_measurement/utils/utils_trace.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:15,1
 DA:28,1
 DA:29,1
 DA:30,1
 DA:31,1
+DA:32,1
 DA:33,1
 DA:34,1
-DA:35,1
-LF:24
-LH:24
-FN:7,11,test_protocol_to_dict
-FNDA:1,test_protocol_to_dict
-FN:14,19,test_protocol_from_dict
-FNDA:1,test_protocol_from_dict
-FN:22,25,test_protocol_list
-FNDA:1,test_protocol_list
-FN:28,35,test_strenum_list_and_str
-FNDA:1,test_strenum_list_and_str
-FNF:4
+DA:36,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:42,1
+DA:45,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:67,1
+DA:68,1
+DA:69,1
+DA:70,1
+DA:71,1
+DA:72,1
+DA:75,1
+DA:86,1
+DA:87,1
+DA:88,1
+DA:96,1
+DA:97,1
+DA:98,1
+DA:101,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:121,1
+DA:130,0
+LF:46
+LH:45
+FN:15,42,permute_basis
+FNDA:1,permute_basis
+FN:45,72,apply_operator_dm
+FNDA:1,apply_operator_dm
+FN:75,98,expectation_trace
+FNDA:1,expectation_trace
+FN:101,118,partial_trace
+FNDA:1,partial_trace
+FN:121,130,purity
+FNDA:0,purity
+FNF:5
 FNH:4
+BRDA:31,0,jump to line 32,1
+BRDA:31,0,jump to line 33,1
+BRDA:38,0,jump to line 39,1
+BRDA:38,0,jump to line 40,1
+BRDA:86,0,jump to line 87,1
+BRDA:86,0,jump to line 88,1
+BRDA:116,0,jump to line 117,1
+BRDA:116,0,jump to line 118,0
+BRF:8
+BRH:7
+end_of_record
+SF:tests/metrics_measurement.py
+DA:1,0
+DA:3,0
+DA:5,0
+DA:6,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+LF:19
+LH:0
+end_of_record
+SF:tests/strategies_measurement.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:5,1
+DA:6,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:25,1
+DA:26,1
+DA:27,1
+DA:29,1
+DA:30,1
+DA:31,1
+DA:32,1
+DA:33,1
+DA:35,1
+DA:36,1
+DA:38,1
+DA:40,1
+DA:46,1
+DA:48,1
+DA:49,1
+DA:53,1
+DA:56,1
+DA:59,1
+DA:61,1
+DA:62,1
+DA:63,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:68,1
+DA:69,1
+DA:72,1
+DA:77,1
+DA:83,1
+DA:84,1
+DA:85,1
+DA:86,1
+DA:89,1
+DA:90,1
+DA:91,1
+DA:92,1
+DA:93,1
+DA:94,1
+DA:95,1
+DA:97,1
+DA:98,1
+DA:102,1
+DA:103,1
+DA:104,1
+DA:105,1
+DA:106,1
+DA:107,1
+DA:111,1
+DA:112,1
+DA:113,1
+DA:114,1
+DA:115,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:120,1
+DA:124,1
+DA:125,1
+DA:126,1
+DA:132,1
+DA:133,1
+DA:134,1
+DA:136,1
+DA:137,1
+DA:138,1
+DA:139,1
+DA:140,1
+DA:143,1
+DA:144,1
+DA:145,1
+DA:146,1
+DA:149,1
+DA:151,1
+DA:152,1
+DA:153,0
+DA:154,1
+DA:155,1
+DA:157,1
+DA:158,1
+DA:160,1
+DA:161,1
+DA:162,1
+DA:163,1
+DA:164,1
+DA:165,1
+DA:167,1
+DA:168,1
+DA:173,1
+DA:174,1
+DA:175,1
+DA:176,1
+DA:177,1
+DA:179,1
+DA:180,1
+DA:185,1
+DA:190,1
+DA:192,1
+DA:193,1
+DA:198,1
+DA:203,1
+DA:204,1
+DA:205,1
+DA:206,1
+DA:207,1
+DA:209,1
+DA:212,1
+DA:213,1
+DA:218,1
+DA:219,1
+DA:220,1
+LF:122
+LH:121
+FN:77,98,get_param
+FNDA:1,get_param
+FN:83,86,get_param.rand_name
+FNDA:1,get_param.rand_name
+FN:102,107,rand_parameter
+FNDA:1,rand_parameter
+FN:111,120,rand_expression
+FNDA:1,rand_expression
+FN:124,209,rand_digital_blocks
+FNDA:1,rand_digital_blocks
+FN:126,207,rand_digital_blocks.blocks
+FNDA:1,rand_digital_blocks.blocks
+FN:213,220,digital_circuits
+FNDA:1,digital_circuits
+FNF:7
+FNH:7
+BRDA:89,0,jump to line 90,1
+BRDA:89,0,jump to line 94,1
+BRDA:92,0,jump to line 93,1
+BRDA:92,0,jump to line 98,1
+BRDA:94,0,jump to line 95,1
+BRDA:94,0,jump to line 97,1
+BRDA:115,0,jump to line 116,1
+BRDA:115,0,jump to line 120,1
+BRDA:116,0,jump to line 117,1
+BRDA:116,0,jump to line 120,1
+BRDA:151,0,jump to line 152,1
+BRDA:151,0,jump to line 207,1
+BRDA:152,0,jump to line 153,0
+BRDA:152,0,jump to line 154,1
+BRDA:154,0,jump to line 155,1
+BRDA:154,0,jump to line 157,0
+BRDA:160,0,jump to line 161,1
+BRDA:160,0,jump to line 167,1
+BRDA:161,0,jump to line 162,1
+BRDA:161,0,jump to line 163,1
+BRDA:163,0,jump to line 151,0
+BRDA:163,0,jump to line 164,1
+BRDA:167,0,jump to line 168,1
+BRDA:167,0,jump to line 179,1
+BRDA:174,0,jump to line 175,1
+BRDA:174,0,jump to line 176,1
+BRDA:176,0,jump to line 151,0
+BRDA:176,0,jump to line 177,1
+BRDA:179,0,jump to line 180,1
+BRDA:179,0,jump to line 192,1
+BRDA:192,0,jump to line 151,0
+BRDA:192,0,jump to line 193,1
+BRDA:203,0,jump to line 204,1
+BRDA:203,0,jump to line 205,1
+BRDA:205,0,jump to line 151,0
+BRDA:205,0,jump to line 206,1
+BRF:36
+BRH:30
+end_of_record
+SF:tests/test_calibration.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:5,1
+DA:7,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:18,1
+DA:23,1
+DA:24,1
+DA:26,1
+DA:27,1
+LF:17
+LH:17
+FN:10,27,test_zero_state_calibration
+FNDA:1,test_zero_state_calibration
+FNF:1
+FNH:1
+BRDA:23,0,jump to line 24,1
+BRDA:23,0,jump to line 26,1
+BRF:2
+BRH:2
+end_of_record
+SF:tests/test_shadow.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:5,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+DA:16,1
+DA:18,1
+DA:19,1
+DA:24,1
+DA:29,1
+DA:34,1
+DA:35,1
+DA:37,1
+DA:40,1
+DA:51,1
+DA:52,1
+DA:53,1
+DA:56,1
+DA:60,1
+DA:66,1
+DA:67,1
+DA:68,1
+DA:71,1
+DA:98,1
+DA:99,1
+DA:100,1
+DA:105,1
+DA:106,1
+DA:109,1
+DA:110,1
+DA:128,1
+DA:131,1
+DA:132,1
+DA:133,1
+DA:134,1
+DA:136,1
+DA:137,1
+DA:138,1
+DA:139,1
+DA:146,1
+DA:149,1
+DA:150,1
+DA:151,1
+DA:152,1
+DA:155,1
+DA:159,1
+DA:162,1
+DA:163,1
+DA:170,1
+DA:171,1
+DA:177,1
+DA:179,1
+DA:180,1
+DA:181,1
+DA:183,1
+DA:190,1
+DA:191,1
+DA:192,1
+DA:194,1
+DA:195,1
+DA:196,1
+DA:198,1
+DA:200,1
+DA:201,1
+DA:202,1
+DA:205,1
+DA:207,1
+DA:212,1
+DA:217,1
+DA:223,1
+DA:229,1
+DA:230,1
+DA:235,1
+DA:236,1
+DA:241,1
+DA:242,1
+DA:243,1
+DA:246,1
+DA:247,1
+DA:252,1
+DA:253,1
+DA:255,1
+DA:256,1
+DA:258,1
+DA:259,1
+DA:261,1
+DA:262,1
+DA:264,1
+DA:265,1
+DA:267,1
+DA:268,1
+DA:271,1
+DA:273,1
+DA:274,1
+DA:275,1
+DA:280,1
+DA:281,1
+DA:282,1
+LF:107
+LH:107
+FN:51,53,test_weight
+FNDA:1,test_weight
+FN:60,68,test_number_of_samples
+FNDA:1,test_number_of_samples
+FN:98,106,test_local_shadow
+FNDA:1,test_local_shadow
+FN:128,146,test_estimations_comparison_exact
+FNDA:1,test_estimations_comparison_exact
+FN:171,268,test_estimations_comparison_tomo_forward_pass
+FNDA:1,test_estimations_comparison_tomo_forward_pass
+FN:271,285,test_shadow_raise_errors
+FNDA:1,test_shadow_raise_errors
+FNF:6
+FNH:6
+end_of_record
+SF:tests/test_tomography.py
+DA:1,1
+DA:3,1
+DA:4,1
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,1
+DA:18,1
+DA:19,1
+DA:20,1
+DA:21,1
+DA:22,1
+DA:23,1
+DA:25,1
+DA:26,1
+DA:32,1
+DA:35,1
+DA:58,1
+DA:61,1
+DA:63,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:68,1
+DA:69,1
+DA:71,1
+DA:72,1
+DA:73,1
+DA:76,1
+DA:133,1
+DA:138,1
+DA:139,1
+DA:140,1
+DA:141,1
+DA:144,1
+DA:145,1
+DA:146,1
+DA:147,1
+DA:148,1
+DA:149,1
+DA:150,1
+DA:151,1
+DA:152,1
+DA:153,1
+DA:154,1
+DA:156,1
+DA:178,1
+DA:179,1
+DA:180,1
+DA:183,1
+DA:184,1
+DA:185,1
+DA:186,1
+DA:187,1
+DA:188,1
+DA:189,1
+DA:190,1
+DA:191,1
+DA:213,1
+DA:214,1
+DA:217,1
+DA:218,1
+DA:219,1
+DA:220,1
+DA:221,1
+DA:226,1
+DA:227,1
+DA:230,1
+DA:232,1
+DA:233,1
+DA:235,1
+DA:239,1
+DA:241,1
+DA:245,1
+DA:247,1
+DA:248,1
+DA:251,1
+DA:252,1
+DA:253,1
+DA:254,1
+DA:256,1
+DA:261,1
+DA:268,1
+DA:276,1
+DA:289,1
+DA:290,1
+DA:291,1
+DA:294,1
+DA:295,1
+DA:301,1
+DA:302,1
+DA:306,1
+DA:310,1
+DA:313,1
+DA:314,1
+DA:315,1
+LF:96
+LH:96
+FN:58,73,test_get_qubit_indices_for_op
+FNDA:1,test_get_qubit_indices_for_op
+FN:133,141,test_rotate
+FNDA:1,test_rotate
+FN:144,180,test_get_counts
+FNDA:1,test_get_counts
+FN:183,214,test_empirical_average
+FNDA:1,test_empirical_average
+FN:221,248,test_tomography
+FNDA:1,test_tomography
+FN:291,310,test_basic_tomography_for_parametric_circuit_forward_pass
+FNDA:1,test_basic_tomography_for_parametric_circuit_forward_pass
+FN:313,318,test_tomography_raise_errors
+FNDA:1,test_tomography_raise_errors
+FNF:7
+FNH:7
+BRDA:65,0,jump to line 66,1
+BRDA:65,0,jump to line 72,1
+BRDA:139,0,jump to line 140,1
+BRDA:139,0,return from function 'test_rotate',1
+BRF:4
+BRH:4
 end_of_record

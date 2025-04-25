@@ -6,7 +6,7 @@ from qadence import QuantumModel
 from qadence.blocks.abstract import AbstractBlock
 from torch import Tensor
 
-from qadence_measurement.abstract import MeasurementManager
+from qadence_measurement.manager import MeasurementManager
 from qadence_measurement.utils.types import MeasurementData
 from qadence_commons import Protocol
 
